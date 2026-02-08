@@ -1,0 +1,6 @@
+patient_id,age,diagnosis
+101,45,Cataract
+102,,Glaucoma
+103,abc,Retina
+104,60,
+105,55,Cataract

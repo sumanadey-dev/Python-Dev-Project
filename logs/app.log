@@ -1,0 +1,61 @@
+2026-01-20 22:26:38,222 - INFO - File read successfully
+2026-01-20 22:26:38,222 - INFO - Total records received: 5
+2026-01-20 23:28:59,175 - INFO - File read successfully
+2026-01-20 23:28:59,176 - INFO - Total records received: 5
+2026-01-20 23:31:11,247 - INFO - File read successfully
+2026-01-20 23:31:11,247 - INFO - Total records received: 5
+2026-01-20 23:33:40,876 - INFO - File read successfully
+2026-01-20 23:33:40,876 - INFO - Total records received: 5
+2026-01-20 23:35:09,347 - INFO - File read successfully
+2026-01-20 23:35:09,347 - INFO - Total records received: 5
+2026-01-20 23:38:18,083 - INFO - File read successfully
+2026-01-20 23:38:18,083 - INFO - Total records received: 5
+2026-01-20 23:39:29,195 - INFO - File read successfully
+2026-01-20 23:39:29,197 - INFO - Total records received: 5
+2026-01-21 00:46:01,372 - INFO - File read successfully
+2026-01-21 00:46:01,372 - WARNING - Invalid record {'patient_id': '102', 'age': '', 'diagnosis': 'Glaucoma'} - Reason: Invalid age
+2026-01-21 00:46:01,372 - WARNING - Invalid record {'patient_id': '103', 'age': 'abc', 'diagnosis': 'Retina'} - Reason: Invalid age
+2026-01-21 00:46:01,372 - WARNING - Invalid record {'patient_id': '104', 'age': '60', 'diagnosis': ''} - Reason: Missing diagnosis
+2026-01-21 00:46:01,372 - INFO - Total records received: 5
+2026-01-21 00:46:01,372 - INFO - Valid records count: 2
+2026-01-21 00:46:01,372 - INFO - Invalid records count: 3
+2026-01-21 22:02:12,552 - INFO - File read successfully
+2026-01-21 22:02:12,552 - WARNING - Invalid record {'patient_id': '102', 'age': '', 'diagnosis': 'Glaucoma'} - Reason: Invalid age
+2026-01-21 22:02:12,552 - WARNING - Invalid record {'patient_id': '103', 'age': 'abc', 'diagnosis': 'Retina'} - Reason: Invalid age
+2026-01-21 22:02:12,552 - WARNING - Invalid record {'patient_id': '104', 'age': '60', 'diagnosis': ''} - Reason: Missing diagnosis
+2026-01-21 22:02:12,552 - INFO - Total records received: 5
+2026-01-21 22:02:12,552 - INFO - Valid records count: 2
+2026-01-21 22:02:12,552 - INFO - Invalid records count: 3
+2026-01-25 09:49:48,110 - INFO - File read successfully
+2026-01-25 09:49:48,110 - WARNING - Invalid record {'patient_id': '102', 'age': '', 'diagnosis': 'Glaucoma'} - Reason: Invalid age
+2026-01-25 09:49:48,110 - WARNING - Invalid record {'patient_id': '103', 'age': 'abc', 'diagnosis': 'Retina'} - Reason: Invalid age
+2026-01-25 09:49:48,110 - WARNING - Invalid record {'patient_id': '104', 'age': '60', 'diagnosis': ''} - Reason: Missing diagnosis
+2026-01-25 09:49:48,110 - INFO - Total records received: 5
+2026-01-25 09:49:48,110 - INFO - Valid records count: 2
+2026-01-25 09:49:48,110 - INFO - Invalid records count: 3
+2026-01-25 10:02:32,763 - INFO - File read successfully
+2026-01-25 10:02:32,763 - WARNING - Invalid record {'patient_id': '102', 'age': '', 'diagnosis': 'Glaucoma'} - Reason: Invalid age
+2026-01-25 10:02:32,763 - WARNING - Invalid record {'patient_id': '103', 'age': 'abc', 'diagnosis': 'Retina'} - Reason: Invalid age
+2026-01-25 10:02:32,763 - WARNING - Invalid record {'patient_id': '104', 'age': '60', 'diagnosis': ''} - Reason: Missing diagnosis
+2026-01-25 10:02:32,763 - INFO - Total records received: 5
+2026-01-25 10:02:32,763 - INFO - Valid records count: 2
+2026-01-25 10:02:32,763 - INFO - Invalid records count: 3
+2026-01-25 10:02:32,763 - INFO - Processing record: {'patient_id': '101', 'age': '45', 'diagnosis': 'Cataract'}
+2026-01-25 10:02:32,763 - INFO - Processing record: {'patient_id': '105', 'age': '55', 'diagnosis': 'Cataract'}
+2026-01-25 22:13:59,371 - INFO - File read successfully
+2026-01-25 22:13:59,371 - WARNING - Invalid record {'patient_id': '102', 'age': '', 'diagnosis': 'Glaucoma'} - Reason: Invalid age
+2026-01-25 22:13:59,371 - WARNING - Invalid record {'patient_id': '103', 'age': 'abc', 'diagnosis': 'Retina'} - Reason: Invalid age
+2026-01-25 22:13:59,371 - WARNING - Invalid record {'patient_id': '104', 'age': '60', 'diagnosis': ''} - Reason: Missing diagnosis
+2026-01-25 22:13:59,371 - INFO - ---- Data Summary ----
+2026-01-25 22:13:59,371 - INFO - Total records: 5
+2026-01-25 22:13:59,371 - INFO - Valid records: 2
+2026-01-25 22:13:59,371 - INFO - Invalid records: 3
+2026-01-25 22:36:36,592 - INFO - File read successfully
+2026-01-25 22:45:41,665 - INFO - File read successfully
+2026-01-25 22:45:41,665 - WARNING - Invalid record {'patient_id': '102', 'age': '', 'diagnosis': 'Glaucoma'} - Reason: Invalid age
+2026-01-25 22:45:41,665 - WARNING - Invalid record {'patient_id': '103', 'age': 'abc', 'diagnosis': 'Retina'} - Reason: Invalid age
+2026-01-25 22:45:41,665 - WARNING - Invalid record {'patient_id': '104', 'age': '60', 'diagnosis': ''} - Reason: Missing diagnosis
+2026-01-25 22:46:41,512 - INFO - File read successfully
+2026-01-25 22:46:41,512 - WARNING - Invalid record {'patient_id': '102', 'age': '', 'diagnosis': 'Glaucoma'} - Reason: Invalid age
+2026-01-25 22:46:41,512 - WARNING - Invalid record {'patient_id': '103', 'age': 'abc', 'diagnosis': 'Retina'} - Reason: Invalid age
+2026-01-25 22:46:41,512 - WARNING - Invalid record {'patient_id': '104', 'age': '60', 'diagnosis': ''} - Reason: Missing diagnosis
