@@ -31,3 +31,13 @@
 2026-02-09 23:55:46,712 - INFO - Total records: 5
 2026-02-09 23:55:46,712 - INFO - Valid records: 2
 2026-02-09 23:55:46,712 - INFO - Invalid records: 3
+2026-02-10 00:09:45,988 - DEBUG - Starting to read patient data file
+2026-02-10 00:09:45,988 - DEBUG - CSV file loaded into memory
+2026-02-10 00:09:45,988 - INFO - File read successfully
+2026-02-10 00:09:45,988 - WARNING - Validation failed | patient_id=102 | Reason=Invalid age
+2026-02-10 00:09:45,988 - WARNING - Validation failed | patient_id=103 | Reason=Invalid age
+2026-02-10 00:09:45,988 - WARNING - Validation failed | patient_id=104 | Reason=Missing diagnosis
+2026-02-10 00:09:45,988 - INFO - -----Data Summary----
+2026-02-10 00:09:45,988 - INFO - Total records: 5
+2026-02-10 00:09:45,988 - INFO - Valid records: 2
+2026-02-10 00:09:45,988 - INFO - Invalid records: 3

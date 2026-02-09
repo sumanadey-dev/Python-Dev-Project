@@ -3,11 +3,14 @@ import logging
 
 logging.basicConfig(
     filename='../logs/app.log',
-    level=logging.INFO,
+    level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
 def read_patient_data(file_path):
+    logging.debug("Starting to read patient data file")
+    logging.debug("CSV file loaded into memory")
+
     records = []
     try:
         with open(file_path, 'r') as file:
@@ -44,7 +47,9 @@ def validate_patient_data(records):
             valid_records.append(record)
 
         except Exception as e:
-            logging.warning(f"Invalid record {record} - Reason: {e}")
+            logging.warning(
+                f"Validation failed | patient_id={record.get('patient_id')} | Reason={e}"
+            )
             invalid_records.append(record)
 
     return valid_records, invalid_records
@@ -68,7 +73,7 @@ def summarize_data(total, valid, invalid):
 
 
 def main():
-    file_path = '../data/sample_data.csv'
+    file_path = '../data/sample_data_backup.csv'
 
     data = read_patient_data(file_path)
     valid_data, invalid_data = validate_patient_data(data)
