@@ -1,2 +1,9 @@
 2026-02-08 21:54:32,564 - INFO - File read successfully
 2026-02-08 21:54:32,564 - INFO - Total records received: 5
+2026-02-09 22:23:16,009 - INFO - File read successfully
+2026-02-09 22:23:16,009 - WARNING - Invalid record {'patient_id': '102', 'age': '', 'diagnosis': 'Glaucoma'} - Reason: Invalid age
+2026-02-09 22:23:16,009 - WARNING - Invalid record {'patient_id': '103', 'age': 'abc', 'diagnosis': 'Retina'} - Reason: Invalid age
+2026-02-09 22:23:16,009 - WARNING - Invalid record {'patient_id': '104', 'age': '60', 'diagnosis': ''} - Reason: Missing diagnosis
+2026-02-09 22:23:16,009 - INFO - Total records recieved: 5
+2026-02-09 22:23:16,009 - INFO - Valid records count: 2
+2026-02-09 22:23:16,009 - INFO - Invalid records count: 3
