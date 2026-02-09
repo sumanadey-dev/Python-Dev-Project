@@ -14,3 +14,12 @@
 2026-02-09 23:29:54,528 - INFO - Total records recieved: 5
 2026-02-09 23:29:54,528 - INFO - Valid records count: 2
 2026-02-09 23:29:54,528 - INFO - Invalid records count: 3
+2026-02-09 23:40:23,911 - INFO - File read successfully
+2026-02-09 23:40:23,911 - WARNING - Invalid record {'patient_id': '102', 'age': '', 'diagnosis': 'Glaucoma'} - Reason: Invalid age
+2026-02-09 23:40:23,911 - WARNING - Invalid record {'patient_id': '103', 'age': 'abc', 'diagnosis': 'Retina'} - Reason: Invalid age
+2026-02-09 23:40:23,911 - WARNING - Invalid record {'patient_id': '104', 'age': '60', 'diagnosis': ''} - Reason: Missing diagnosis
+2026-02-09 23:40:23,911 - INFO - Total records recieved: 5
+2026-02-09 23:40:23,911 - INFO - Valid records count: 2
+2026-02-09 23:40:23,911 - INFO - Invalid records count: 3
+2026-02-09 23:40:23,911 - INFO - Processing record: {'patient_id': '101', 'age': '45', 'diagnosis': 'Cataract'}
+2026-02-09 23:40:23,911 - INFO - Processing record: {'patient_id': '105', 'age': '55', 'diagnosis': 'Cataract'}

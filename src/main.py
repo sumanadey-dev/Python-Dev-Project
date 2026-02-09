@@ -48,6 +48,15 @@ def validate_patient_data(records):
             invalid_records.append(record)
 
     return valid_records, invalid_records
+
+def process_valid_data(valid_records):
+    """
+    Process valid patient records.
+    
+    For now, we just log each valid record.
+    """
+    for record in valid_records:
+        logging.info(f"Processing record: {record}")
         
 
 
@@ -59,6 +68,8 @@ def main():
     logging.info(f"Total records recieved: {len(data)}")
     logging.info(f"Valid records count: {len(valid_data)}")
     logging.info(f"Invalid records count: {len(invalid_data)}")
+
+    process_valid_data(valid_data)
 
 if __name__ == "__main__":
     main()
