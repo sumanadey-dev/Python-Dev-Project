@@ -57,20 +57,29 @@ def process_valid_data(valid_records):
     """
     for record in valid_records:
         logging.info(f"Processing record: {record}")
+
+
+def summarize_data(total, valid, invalid):
+    logging.info("-----Data Summary----")
+    logging.info(f"Total records: {total}")
+    logging.info(f"Valid records: {valid}")
+    logging.info(f"Invalid records: {invalid}")
         
 
 
 def main():
-    data = read_patient_data('../data/sample_data.csv')
-    
+    file_path = '../data/sample_data.csv'
+
+    data = read_patient_data(file_path)
     valid_data, invalid_data = validate_patient_data(data)
 
-    logging.info(f"Total records recieved: {len(data)}")
-    logging.info(f"Valid records count: {len(valid_data)}")
-    logging.info(f"Invalid records count: {len(invalid_data)}")
+    summarize_data(
+        total=len(data),
+        valid=len(valid_data),
+        invalid=len(invalid_data)
+    )
 
-    process_valid_data(valid_data)
-
+    
 if __name__ == "__main__":
     main()
 
