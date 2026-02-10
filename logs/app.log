@@ -41,3 +41,6 @@
 2026-02-10 00:09:45,988 - INFO - Total records: 5
 2026-02-10 00:09:45,988 - INFO - Valid records: 2
 2026-02-10 00:09:45,988 - INFO - Invalid records: 3
+2026-02-10 22:00:40,769 - DEBUG - Starting to read patient data file
+2026-02-10 22:00:40,785 - DEBUG - CSV file loaded into memory
+2026-02-10 22:00:40,785 - INFO - File read successfully

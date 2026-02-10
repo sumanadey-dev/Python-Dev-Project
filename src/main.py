@@ -1,8 +1,9 @@
 import csv  
 import logging
+import config
 
 logging.basicConfig(
-    filename='../logs/app.log',
+    filename=config.LOG_FILE_PATH,
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
@@ -24,36 +25,15 @@ def read_patient_data(file_path):
         logging.error(f"Unexpected error: {e}")
     return records
 
-def validate_patient_data(records):
-    valid_records = []
-    invalid_records = []
+def validate_patient_data():
+    import constants
 
-    for record in records:
-        try:
-            patient_id = record.get('patient_id')
-            age = record.get('age')
-            diagnosis = record.get('diagnosis')
+    for field in constants.REQUIRED_FIELDS:
 
-            #validation rules
-            if not patient_id:
-                raise ValueError("Missing patient_id")
-            
-            if not age or not age.isdigit():
-                raise ValueError("Invalid age")
-            
-            if not diagnosis:
-                raise ValueError("Missing diagnosis")
-            
-            valid_records.append(record)
+        if not record.get(field):
+            raise ValueError(f"Missing {field}")
 
-        except Exception as e:
-            logging.warning(
-                f"Validation failed | patient_id={record.get('patient_id')} | Reason={e}"
-            )
-            invalid_records.append(record)
-
-    return valid_records, invalid_records
-
+       
 def process_valid_data(valid_records):
     """
     Process valid patient records.
@@ -73,9 +53,9 @@ def summarize_data(total, valid, invalid):
 
 
 def main():
-    file_path = '../data/sample_data_backup.csv'
 
-    data = read_patient_data(file_path)
+
+    data = read_patient_data(config.DATA_FILE_PATH)
     valid_data, invalid_data = validate_patient_data(data)
 
     summarize_data(
