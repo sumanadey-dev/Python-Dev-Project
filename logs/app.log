@@ -44,3 +44,19 @@
 2026-02-10 22:00:40,769 - DEBUG - Starting to read patient data file
 2026-02-10 22:00:40,785 - DEBUG - CSV file loaded into memory
 2026-02-10 22:00:40,785 - INFO - File read successfully
+2026-02-10 23:21:50,750 - DEBUG - Starting to read patient data file
+2026-02-10 23:21:50,750 - INFO - File read successfully
+2026-02-10 23:21:50,750 - DEBUG - CSV file loaded into memory
+2026-02-10 23:21:50,750 - DEBUG - Validating record: {'patient_id': '101', 'age': '45', 'diagnosis': 'Cataract'}
+2026-02-10 23:21:50,750 - DEBUG - Record valid: patient_id=101
+2026-02-10 23:21:50,750 - DEBUG - Validating record: {'patient_id': '102', 'age': '', 'diagnosis': 'Glaucoma'}
+2026-02-10 23:21:50,750 - WARNING - Validation failed | patient_id=102 | Reason=Missing age
+2026-02-10 23:21:50,750 - DEBUG - Validating record: {'patient_id': '103', 'age': 'abc', 'diagnosis': 'Retina'}
+2026-02-10 23:21:50,750 - WARNING - Validation failed | patient_id=103 | Reason=Invalid age
+2026-02-10 23:21:50,750 - DEBUG - Validating record: {'patient_id': '104', 'age': '60', 'diagnosis': ''}
+2026-02-10 23:21:50,750 - WARNING - Validation failed | patient_id=104 | Reason=Missing diagnosis
+2026-02-10 23:21:50,750 - DEBUG - Validating record: {'patient_id': '105', 'age': '55', 'diagnosis': 'Cataract'}
+2026-02-10 23:21:50,750 - DEBUG - Record valid: patient_id=105
+2026-02-10 23:21:50,750 - INFO - Total records received: 5
+2026-02-10 23:21:50,750 - INFO - Valid records count: 2
+2026-02-10 23:21:50,750 - INFO - Invalid records count: 3
